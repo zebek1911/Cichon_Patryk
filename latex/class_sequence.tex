@@ -2,6 +2,11 @@
 \label{class_sequence}\index{Sequence@{Sequence}}
 
 
+A class representing a mathematical sequence of integers.  
+
+
+
+
 {\ttfamily \#include $<$Sequence.\+h$>$}
 
 \doxysubsection*{Metody publiczne}
@@ -24,26 +29,29 @@ void \mbox{\hyperlink{class_sequence_a846182938dec16da708263b0208d5407}{add\+Dat
 int \mbox{\hyperlink{class_sequence_a529ff1de3fac284b3025bae9ed2766f5}{sum}} () const
 \item 
 \mbox{\hyperlink{class_sequence_a532b7e8df6ff6b2f990c14ae97859ca2}{Sequence}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_sequence_a8b38b0be5b5a62ec65b877c9a4e2faeb}{Sequence}} (const \mbox{\hyperlink{class_sequence}{Sequence}} \&other)
-\item 
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_sequence_aee09a7d70c3ab523fed85da94ea1366f}{$\sim$\+Sequence}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_sequence_a47eb52bb7aa6b7426310996e5bba1e25}{get\+Length}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Get the length of the sequence. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_sequence_a0c95662f43b0849f2607c0710068726f}{set\+Length}} (int new\+Length)
-\item 
+\begin{DoxyCompactList}\small\item\em Set the length of the sequence. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_sequence_a16ca4df8128b2282207c868835307700}{get\+Element}} (int index)
-\item 
+\begin{DoxyCompactList}\small\item\em Get the element at a given index. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_sequence_a89ebb7c96c6726d9f1421271a2d6ee1d}{set\+Element}} (int index, int new\+Value)
-\item 
+\begin{DoxyCompactList}\small\item\em Set the element at a given index. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_sequence_a39e9f07adf026e1ae9cd9ea8fdb22271}{calculate\+Sum}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Calculate the sum of all elements in the sequence. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_sequence_a9b3ed21a7ffd32d38800ff45bc11b198}{calculate\+Product}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Calculate the product of all elements in the sequence. \end{DoxyCompactList}\item 
 double \mbox{\hyperlink{class_sequence_a308f289974a8a54da41d53436f463a0d}{calculate\+Average}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Calculate the average of all elements in the sequence. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Opis szczegółowy}
+A class representing a mathematical sequence of integers. 
 
 \doxysubsection{Dokumentacja konstruktora i destruktora}
 \mbox{\Hypertarget{class_sequence_a532b7e8df6ff6b2f990c14ae97859ca2}\label{class_sequence_a532b7e8df6ff6b2f990c14ae97859ca2}} 
@@ -70,12 +78,27 @@ double \mbox{\hyperlink{class_sequence_a308f289974a8a54da41d53436f463a0d}{calcul
 \doxysubsubsection{\texorpdfstring{Sequence()}{Sequence()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
 {\footnotesize\ttfamily Sequence\+::\+Sequence (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{class_sequence_a8b38b0be5b5a62ec65b877c9a4e2faeb}\label{class_sequence_a8b38b0be5b5a62ec65b877c9a4e2faeb}} 
+
+
+Default constructor. 
+
+Constructs a new object of the class with default values. \mbox{\Hypertarget{class_sequence_a8b38b0be5b5a62ec65b877c9a4e2faeb}\label{class_sequence_a8b38b0be5b5a62ec65b877c9a4e2faeb}} 
 \index{Sequence@{Sequence}!Sequence@{Sequence}}
 \index{Sequence@{Sequence}!Sequence@{Sequence}}
 \doxysubsubsection{\texorpdfstring{Sequence()}{Sequence()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
 {\footnotesize\ttfamily Sequence\+::\+Sequence (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_sequence}{Sequence}} \&}]{other }\end{DoxyParamCaption})}
 
+
+
+Copy constructor. 
+
+Constructs a new object as a copy of an existing \textquotesingle{}\mbox{\hyperlink{class_sequence}{Sequence}}\textquotesingle{} object.
+
+
+\begin{DoxyParams}{Parametry}
+{\em other} & A constant reference to the existing \textquotesingle{}\mbox{\hyperlink{class_sequence}{Sequence}}\textquotesingle{} object. \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{class_sequence_aee09a7d70c3ab523fed85da94ea1366f}\label{class_sequence_aee09a7d70c3ab523fed85da94ea1366f}} 
 \index{Sequence@{Sequence}!````~Sequence@{$\sim$Sequence}}
 \index{````~Sequence@{$\sim$Sequence}!Sequence@{Sequence}}
@@ -83,6 +106,10 @@ double \mbox{\hyperlink{class_sequence_a308f289974a8a54da41d53436f463a0d}{calcul
 {\footnotesize\ttfamily Sequence\+::$\sim$\+Sequence (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
+
+Destructor. 
+
+Cleans up memory when the object goes out of scope. 
 
 \doxysubsection{Dokumentacja funkcji składowych}
 \mbox{\Hypertarget{class_sequence_a846182938dec16da708263b0208d5407}\label{class_sequence_a846182938dec16da708263b0208d5407}} 
@@ -97,18 +124,39 @@ double \mbox{\hyperlink{class_sequence_a308f289974a8a54da41d53436f463a0d}{calcul
 \doxysubsubsection{\texorpdfstring{calculateAverage()}{calculateAverage()}}
 {\footnotesize\ttfamily double Sequence\+::calculate\+Average (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+Calculate the average of all elements in the sequence. 
+
+\begin{DoxyReturn}{Zwraca}
+The average of all elements in the sequence as a double. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{class_sequence_a9b3ed21a7ffd32d38800ff45bc11b198}\label{class_sequence_a9b3ed21a7ffd32d38800ff45bc11b198}} 
 \index{Sequence@{Sequence}!calculateProduct@{calculateProduct}}
 \index{calculateProduct@{calculateProduct}!Sequence@{Sequence}}
 \doxysubsubsection{\texorpdfstring{calculateProduct()}{calculateProduct()}}
 {\footnotesize\ttfamily int Sequence\+::calculate\+Product (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+Calculate the product of all elements in the sequence. 
+
+\begin{DoxyReturn}{Zwraca}
+The product of all elements in the sequence as an integer. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{class_sequence_a39e9f07adf026e1ae9cd9ea8fdb22271}\label{class_sequence_a39e9f07adf026e1ae9cd9ea8fdb22271}} 
 \index{Sequence@{Sequence}!calculateSum@{calculateSum}}
 \index{calculateSum@{calculateSum}!Sequence@{Sequence}}
 \doxysubsubsection{\texorpdfstring{calculateSum()}{calculateSum()}}
 {\footnotesize\ttfamily int Sequence\+::calculate\+Sum (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+Calculate the sum of all elements in the sequence. 
+
+\begin{DoxyReturn}{Zwraca}
+The sum of all elements in the sequence as an integer. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{class_sequence_af8edf43cf9689b44f18a652fc46e5bd5}\label{class_sequence_af8edf43cf9689b44f18a652fc46e5bd5}} 
 \index{Sequence@{Sequence}!getDataAt@{getDataAt}}
 \index{getDataAt@{getDataAt}!Sequence@{Sequence}}
@@ -127,12 +175,31 @@ double \mbox{\hyperlink{class_sequence_a308f289974a8a54da41d53436f463a0d}{calcul
 \doxysubsubsection{\texorpdfstring{getElement()}{getElement()}}
 {\footnotesize\ttfamily int Sequence\+::get\+Element (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
 
+
+
+Get the element at a given index. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em index} & The index of the element to be retrieved.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+The value of the element at the given index. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{class_sequence_a47eb52bb7aa6b7426310996e5bba1e25}\label{class_sequence_a47eb52bb7aa6b7426310996e5bba1e25}} 
 \index{Sequence@{Sequence}!getLength@{getLength}}
 \index{getLength@{getLength}!Sequence@{Sequence}}
 \doxysubsubsection{\texorpdfstring{getLength()}{getLength()}}
 {\footnotesize\ttfamily int Sequence\+::get\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+Get the length of the sequence. 
+
+\begin{DoxyReturn}{Zwraca}
+The length of the sequence as an integer. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{class_sequence_a3f580d82d5081f45d297b343157c2798}\label{class_sequence_a3f580d82d5081f45d297b343157c2798}} 
 \index{Sequence@{Sequence}!setDataAt@{setDataAt}}
 \index{setDataAt@{setDataAt}!Sequence@{Sequence}}
@@ -145,12 +212,32 @@ double \mbox{\hyperlink{class_sequence_a308f289974a8a54da41d53436f463a0d}{calcul
 \doxysubsubsection{\texorpdfstring{setElement()}{setElement()}}
 {\footnotesize\ttfamily void Sequence\+::set\+Element (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{int}]{new\+Value }\end{DoxyParamCaption})}
 
+
+
+Set the element at a given index. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em index} & The index of the element to be set. \\
+\hline
+{\em new\+Value} & The new value of the element. \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{class_sequence_a0c95662f43b0849f2607c0710068726f}\label{class_sequence_a0c95662f43b0849f2607c0710068726f}} 
 \index{Sequence@{Sequence}!setLength@{setLength}}
 \index{setLength@{setLength}!Sequence@{Sequence}}
 \doxysubsubsection{\texorpdfstring{setLength()}{setLength()}}
 {\footnotesize\ttfamily void Sequence\+::set\+Length (\begin{DoxyParamCaption}\item[{int}]{new\+Length }\end{DoxyParamCaption})}
 
+
+
+Set the length of the sequence. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em new\+Length} & The new length of the sequence as an integer. \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{class_sequence_a529ff1de3fac284b3025bae9ed2766f5}\label{class_sequence_a529ff1de3fac284b3025bae9ed2766f5}} 
 \index{Sequence@{Sequence}!sum@{sum}}
 \index{sum@{sum}!Sequence@{Sequence}}

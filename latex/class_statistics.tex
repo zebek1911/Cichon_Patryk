@@ -2,6 +2,11 @@
 \label{class_statistics}\index{Statistics@{Statistics}}
 
 
+Klasa do obliczania statystyk.  
+
+
+
+
 {\ttfamily \#include $<$Statistics.\+h$>$}
 
 \doxysubsection*{Metody publiczne}
@@ -26,20 +31,25 @@ void \mbox{\hyperlink{class_statistics_a463de33196ee6dc8bbf27d04ca9ecfba}{add\+D
 double \mbox{\hyperlink{class_statistics_a749c287690ff3a3fd15cdc8c0fa749b3}{average}} () const
 \item 
 \mbox{\hyperlink{class_statistics_a60ddd90a571ed4c3ce8c0f6317a36d63}{Statistics}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Konstruktor domyślny. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_statistics_aacba331fcc5892bf27cddf1552c59c69}{Statistics}} (const \mbox{\hyperlink{class_statistics}{Statistics}} \&other)
-\item 
+\begin{DoxyCompactList}\small\item\em Konstruktor kopiujący. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_statistics_ab68ede75479e44d5c35b78ec1284065b}{$\sim$\+Statistics}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Destruktor. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_statistics_a15092baf83819089baa8100aaeb740cd}{get\+Data}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Funkcja dostępu do składowej data. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_statistics_a3ab70a756685476d6e36f385f355402f}{set\+Data}} (int new\+Data)
-\item 
+\begin{DoxyCompactList}\small\item\em Funkcja ustawiania składowej data. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_statistics_a9103f395622f451a9a41945898592e9a}{calculate\+Mean}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Funkcja obliczania średniej. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_statistics_a74f1bbdf3217b7e5469c7742398bb749}{calculate\+Standard\+Deviation}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Funkcja obliczania odchylenia standardowego. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\doxysubsection{Opis szczegółowy}
+Klasa do obliczania statystyk. 
+
+Klasa pozwala na obliczanie średniej oraz odchylenia standardowego danych. 
 
 \doxysubsection{Dokumentacja konstruktora i destruktora}
 \mbox{\Hypertarget{class_statistics_a60ddd90a571ed4c3ce8c0f6317a36d63}\label{class_statistics_a60ddd90a571ed4c3ce8c0f6317a36d63}} 
@@ -66,12 +76,27 @@ int \mbox{\hyperlink{class_statistics_a74f1bbdf3217b7e5469c7742398bb749}{calcula
 \doxysubsubsection{\texorpdfstring{Statistics()}{Statistics()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
 {\footnotesize\ttfamily Statistics\+::\+Statistics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{class_statistics_aacba331fcc5892bf27cddf1552c59c69}\label{class_statistics_aacba331fcc5892bf27cddf1552c59c69}} 
+
+
+Konstruktor domyślny. 
+
+Tworzy nową instancję klasy \mbox{\hyperlink{class_statistics}{Statistics}} z wartością 0 przypisaną do składowej data. \mbox{\Hypertarget{class_statistics_aacba331fcc5892bf27cddf1552c59c69}\label{class_statistics_aacba331fcc5892bf27cddf1552c59c69}} 
 \index{Statistics@{Statistics}!Statistics@{Statistics}}
 \index{Statistics@{Statistics}!Statistics@{Statistics}}
 \doxysubsubsection{\texorpdfstring{Statistics()}{Statistics()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
 {\footnotesize\ttfamily Statistics\+::\+Statistics (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_statistics}{Statistics}} \&}]{other }\end{DoxyParamCaption})}
 
+
+
+Konstruktor kopiujący. 
+
+Tworzy nową instancję klasy \mbox{\hyperlink{class_statistics}{Statistics}} skopiowaną z innej instancji.
+
+
+\begin{DoxyParams}{Parametry}
+{\em other} & -\/ referencja do instancji klasy \mbox{\hyperlink{class_statistics}{Statistics}}, z której nastąpi skopiowanie. \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{class_statistics_ab68ede75479e44d5c35b78ec1284065b}\label{class_statistics_ab68ede75479e44d5c35b78ec1284065b}} 
 \index{Statistics@{Statistics}!````~Statistics@{$\sim$Statistics}}
 \index{````~Statistics@{$\sim$Statistics}!Statistics@{Statistics}}
@@ -79,6 +104,10 @@ int \mbox{\hyperlink{class_statistics_a74f1bbdf3217b7e5469c7742398bb749}{calcula
 {\footnotesize\ttfamily Statistics\+::$\sim$\+Statistics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
+
+Destruktor. 
+
+Usuwa instancję klasy \mbox{\hyperlink{class_statistics}{Statistics}}. 
 
 \doxysubsection{Dokumentacja funkcji składowych}
 \mbox{\Hypertarget{class_statistics_a463de33196ee6dc8bbf27d04ca9ecfba}\label{class_statistics_a463de33196ee6dc8bbf27d04ca9ecfba}} 
@@ -99,12 +128,30 @@ int \mbox{\hyperlink{class_statistics_a74f1bbdf3217b7e5469c7742398bb749}{calcula
 \doxysubsubsection{\texorpdfstring{calculateMean()}{calculateMean()}}
 {\footnotesize\ttfamily int Statistics\+::calculate\+Mean (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+Funkcja obliczania średniej. 
+
+Oblicza średnią wartość danych.
+
+\begin{DoxyReturn}{Zwraca}
+Średnia wartość danych. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{class_statistics_a74f1bbdf3217b7e5469c7742398bb749}\label{class_statistics_a74f1bbdf3217b7e5469c7742398bb749}} 
 \index{Statistics@{Statistics}!calculateStandardDeviation@{calculateStandardDeviation}}
 \index{calculateStandardDeviation@{calculateStandardDeviation}!Statistics@{Statistics}}
 \doxysubsubsection{\texorpdfstring{calculateStandardDeviation()}{calculateStandardDeviation()}}
 {\footnotesize\ttfamily int Statistics\+::calculate\+Standard\+Deviation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+Funkcja obliczania odchylenia standardowego. 
+
+Oblicza odchylenie standardowe danych.
+
+\begin{DoxyReturn}{Zwraca}
+Odchylenie standardowe danych. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{class_statistics_a83449d8f89f3375dd1a42055ab78e3b2}\label{class_statistics_a83449d8f89f3375dd1a42055ab78e3b2}} 
 \index{Statistics@{Statistics}!getCount@{getCount}}
 \index{getCount@{getCount}!Statistics@{Statistics}}
@@ -117,6 +164,13 @@ int \mbox{\hyperlink{class_statistics_a74f1bbdf3217b7e5469c7742398bb749}{calcula
 \doxysubsubsection{\texorpdfstring{getData()}{getData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily int Statistics\+::get\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+Funkcja dostępu do składowej data. 
+
+\begin{DoxyReturn}{Zwraca}
+Wartość składowej data. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{class_statistics_a9fc63fe0a12e20b447ca96a90be19c72}\label{class_statistics_a9fc63fe0a12e20b447ca96a90be19c72}} 
 \index{Statistics@{Statistics}!getData@{getData}}
 \index{getData@{getData}!Statistics@{Statistics}}
@@ -135,6 +189,15 @@ int \mbox{\hyperlink{class_statistics_a74f1bbdf3217b7e5469c7742398bb749}{calcula
 \doxysubsubsection{\texorpdfstring{setData()}{setData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily void Statistics\+::set\+Data (\begin{DoxyParamCaption}\item[{int}]{new\+Data }\end{DoxyParamCaption})}
 
+
+
+Funkcja ustawiania składowej data. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em new\+Data} & -\/ nowa wartość składowej data. \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{class_statistics_a72caad403d3a8cb70249dc5dd81a5ab8}\label{class_statistics_a72caad403d3a8cb70249dc5dd81a5ab8}} 
 \index{Statistics@{Statistics}!setData@{setData}}
 \index{setData@{setData}!Statistics@{Statistics}}
